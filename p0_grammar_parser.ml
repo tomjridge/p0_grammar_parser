@@ -112,12 +112,12 @@ module X_ = struct
   let example = {|
 
 (* the expressions we want to parse at top-level *)
-S -> ?w? DEFN ?w? ?eof?
-| ?w? TYPEDEFINITIONS ?w? ?eof?
-| ?w? TYPEXPR ?w? ?eof?
+S -> ?w DEFN ?w ?eof
+| ?w TYPEDEFINITIONS ?w ?eof
+| ?w TYPEXPR ?w ?eof
 
 |}
 
-  let _ = grammar example
+   let _ = grammar example
 
 end
